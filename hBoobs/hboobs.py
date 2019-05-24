@@ -28,7 +28,7 @@ DEFAULT = {"nsfw_channels": ["133251234164375552"], "invert" : False, "nsfw_msg"
 #example: "/butts/vote/6202/minus/" - negative vote for butts with id 6202; vote for noise: "/noise/vote/{id=0}/{operation=plus;[plus,minus]}/",
 #example: "/noise/vote/57/minus/" - negative vote for noise with id 57;
 
-class HTboobs(commands.Cog):
+class hBoobs(commands.Cog):
     """The hboobs/hbutts.ru NSFW pictures of nature cog.
     https://github.com/Canule/Mash-Cogs
     """
