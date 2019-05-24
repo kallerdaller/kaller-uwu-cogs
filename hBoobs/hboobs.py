@@ -28,8 +28,8 @@ DEFAULT = {"nsfw_channels": ["133251234164375552"], "invert" : False, "nsfw_msg"
 #example: "/butts/vote/6202/minus/" - negative vote for butts with id 6202; vote for noise: "/noise/vote/{id=0}/{operation=plus;[plus,minus]}/",
 #example: "/noise/vote/57/minus/" - negative vote for noise with id 57;
 
-class hBoobs(commands.Cog):
-    """The hboobs/hbutts.ru NSFW pictures of nature cog.
+class Hboobs(commands.Cog):
+    """The oboobs/obutts.ru NSFW pictures of nature cog.
     https://github.com/Canule/Mash-Cogs
     """
 
@@ -103,8 +103,8 @@ class hBoobs(commands.Cog):
 
 
     @checks.admin_or_permissions(administrator=True)
-    @_oboobs.command(no_pm=True)
-    async def nsfw(self, ctx):
+    @_hboobs.command(no_pm=True)
+    async def hnsfw(self, ctx):
         """Toggle oboobs nswf for this channel on/off.
         Admin/owner restricted."""
         nsfwChan = False
@@ -125,8 +125,8 @@ class hBoobs(commands.Cog):
                 await ctx.send("nsfw OFF")
         
     @checks.admin_or_permissions(administrator=True)
-    @_oboobs.command(no_pm=True)
-    async def invert(self, ctx):
+    @_hboobs.command(no_pm=True)
+    async def hinvert(self, ctx):
         """Invert nsfw blacklist to whitelist
         Admin/owner restricted."""
         if not await self.settings.guild(ctx.guild).invert():

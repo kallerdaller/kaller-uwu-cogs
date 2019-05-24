@@ -1,4 +1,4 @@
-from .hBoobs import hBoobs
+from .hboobs import Hboobs
 
 def setup(bot):
     n = Hboobs(bot)
