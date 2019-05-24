@@ -1,0 +1,11 @@
+{
+    "author": "kaller",
+    "bot_version": "0.0.3",
+    "description": ";)",
+    "hidden": false,
+    "install_msg": "If you are not in a server with me you probably shouldn't be seeing this message",
+    "required_cogs": [],
+    "requirements": [],
+    "short": "nsfw cog",
+    "tags": ["nsfw", "boobs", "ass"]
+}
